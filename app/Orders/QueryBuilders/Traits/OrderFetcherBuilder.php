@@ -10,7 +10,7 @@ trait OrderFetcherBuilder
     /**
      * @return Collection<Order>
      */
-    public function completed(): Collection
+    public function getCompleted(): Collection
     {
         return $this->whereCompleted()->get();
     }
@@ -18,7 +18,7 @@ trait OrderFetcherBuilder
     /**
      * @return Collection<Order>
      */
-    public function pending(): Collection
+    public function getPending(): Collection
     {
         return $this->wherePending()->get();
     }
