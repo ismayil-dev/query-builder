@@ -18,7 +18,6 @@ use Illuminate\Support\Carbon;
  * @property float $total
  * @property Carbon $created_at
  * @property Carbon|null $updated_at
- *
  * @method static OrderEloquentBuilder|Order whereId(int $value)
  * @method static OrderEloquentBuilder|Order newModelQuery()
  * @method static OrderEloquentBuilder|Order newQuery()
@@ -28,6 +27,14 @@ use Illuminate\Support\Carbon;
  * @method static OrderEloquentBuilder|Order wherePending()
  * @method static OrderEloquentBuilder|Order whereProcessing()
  * @method static OrderEloquentBuilder|Order whereRefunded()
+ * @method static OrderEloquentBuilder|Order completed()
+ * @method static OrderEloquentBuilder|Order markAsCancelled()
+ * @method static OrderEloquentBuilder|Order markAsCompleted()
+ * @method static OrderEloquentBuilder|Order markAsProcessing()
+ * @method static OrderEloquentBuilder|Order markAsRefunded()
+ * @method static OrderEloquentBuilder|Order pending()
+ * @method static OrderEloquentBuilder|Order whereCreatedThisMonth()
+ * @method static OrderEloquentBuilder|Order whereCreatedToday()
  * @mixin Eloquent
  */
 class Order extends Model
