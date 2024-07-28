@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 
 /**
- *
+ * 
  *
  * @property int $customer_id
  * @property int $product_id
