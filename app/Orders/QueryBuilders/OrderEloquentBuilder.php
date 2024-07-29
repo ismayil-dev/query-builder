@@ -8,7 +8,7 @@ use App\Orders\QueryBuilders\Traits\OrderFetcherBuilder;
 use App\Orders\QueryBuilders\Traits\OrderStatusQueryBuilder;
 use Illuminate\Database\Eloquent\Builder;
 
-class OrderEloquentBuilder extends Builder
+class OrderEloquentBuilder extends Builder implements OrderEloquentBuilderContract
 {
     use OrderStatusQueryBuilder;
     use OrderDateQueryBuilder;
